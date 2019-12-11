@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+    Document   : index
+    Created on : Apr 7, 2019, 10:20:34 PM
+    Author     : Yahiya Mansuri
+-->
+<html>
+    <head>
+        <title>BusDetails</title> 
+        <style>
+            body{background-color:MintCream;font-size:20px;}
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <center>
+                <h1>Bus-Information-System</h1>
+                <br><br><br><hr>
+                <h3>Search By Station</h3>
+                <form action="searchbystation" method="post">
+                    <b>Enter Departure Station::</b><input type="text" name="dept_stn" style="text-transform: uppercase;"/>
+                        <b>Enter Destination Station::</b><input type="text" name="dest_stn" style="text-transform: uppercase;"/>
+                    <input type="submit" name="submit" value="search..."/>  
+                </form>
+                <br><br><br><hr>
+                <form action="searchbydate" method="post">
+                    <h3>Search-By-Date</h3>
+                    <h4>*Date format must be day/month/year</h4>
+                    <b>Enter Date::</b><input type="text" name="date"/>
+                    <b>Enter Departure Station::</b><input type="text" name="dept_stn" style="text-transform: uppercase;"/>
+                        <b>Enter Destination Station::</b><input type="text" name="dest_stn" style="text-transform: uppercase;"/>
+                    <input type="submit" name="submit" value="Search..."/>
+                </form>
+                <br><br><hr>
+                <form action="searchallroute" action="post">
+                    <h3>Search-All-Buses-By-Date</h3>
+                    <h4>*Date format must be day/month/year</h4>
+                    <b>Enter Date::</b><input type="text" name="date" />
+                    <input type="submit" name="submit" value="search..."/>
+                </form>
+                <br><br><hr>
+            </center>
+        </div>
+    </body>
+</html>

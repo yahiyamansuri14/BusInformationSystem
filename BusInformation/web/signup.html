@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>sign-up</title>
+		<style>
+			 body{background-color:mintcream;}
+			*{font-family:Arial Rounded MT Bold;}	
+		     #box{height:40px;width:350px;background-color:transparent;}
+			 #box-signup{height:40px;width:350px;margin-top:30px;background-color:RoyalBlue;font-weight:bolder;}
+			 table{margin-top:20px;}
+			 h1{text-align:center;}
+			 .main-div{height:100%;}
+		   </style>
+	</head>
+	<body>
+	
+		<div class="sign-up-title">
+			<h1>Sign-Up</h1>
+		</div>
+		<div class="main-div">
+			<center>
+				<form  action="signup" method="post">				
+					<table>
+						<tr><td>First Name</td></tr>
+						<tr><td><input type="text" name="fname" placeholder="ENTER YOUR FIRST NAME" id="box" required /></td></tr>
+						<tr><td>Last Name</td></tr>
+						<tr><td><input type="text" name="lname" placeholder="ENTER YOUR LAST NAME" id="box" required /></td>
+						</tr>
+						
+						<tr><td>Mobile No</td></tr>
+						<tr><td><input type="text" name="mno" placeholder="ENTER YOUR MOBILE NO" id="box" /></td>
+						</tr>
+						<tr><td>Gender</td>
+						<tr><td>
+								<input type="radio" name="gender" value="male">Male
+								<input type="radio" name="gender" value="female">FeMale
+						</tr>
+						<tr><td>Email</td></tr>
+						<tr><td><input type="email" name="email" placeholder="ENTER YOUR EMAIL ADDRESS" id="box" required></td>
+						</tr>
+						<tr><td>Password</td></tr>
+						<tr><td><input type="password" name="pwd" placeholder="ENTER PASSWORD" id="box" required></td>
+						</tr>
+						<tr><td>Confirm Password</td></tr>
+						<tr><td><input type="password" placeholder="RE-ENTER PASSWORD" id="box" name="rpwd" required></td>
+						</tr>
+						<tr>
+						<td><input type="submit" name="submit" id="box-signup" value="Sign-Up" ></td>
+						</tr>
+					</table>
+				</form>		
+			</center>
+		</div>
+	</body>	
+</html> 
